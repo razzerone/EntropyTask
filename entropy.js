@@ -13,7 +13,8 @@ fs.readFile(arg[2], (err, data) => {
     }
 
     if (data.length == 0) {
-        throw new Error('Пустой файл');
+        console.log('пустой файл');
+        return;
     }
 
     text = data.toString();
@@ -46,7 +47,7 @@ fs.readFile(arg[2], (err, data) => {
     }
 
     if (n == 1){
-        console.log(1);
+        console.log(0);
         return;
     }
     else {
